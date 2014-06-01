@@ -52,8 +52,20 @@ d3.select('#legend')
     value: d3.max(stopTimes)/1000000 + ' ms'
   },
   {
-    text: 'total tasks',
+    text: 'total tasks/events',
     value: times.length
+  },
+  {
+    text: 'tasks color: ',
+    value: 'blue'
+  },
+  {
+    text: 'file read color: ',
+    value: 'green'
+  },
+  {
+    text: 'file write color: ',
+    value: 'red'
   }
   ])
   .enter().append("div")
